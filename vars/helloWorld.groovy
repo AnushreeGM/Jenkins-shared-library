@@ -1,3 +1,4 @@
 def call() {
-  sh 'mvn clean'
+  def mvnHome = tool 'Maven3'
+  sh "${mvnHome}/bin/mvn clean"
 }
